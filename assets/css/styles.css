@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins";
+}
+
+main {
+  height: 10000px;
+}
+
+/* common */
+.content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0 16px;
+  min-width: 118px;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  border-radius: 25px;
+  background-color: #171100;
+  color: #ffffff;
+}
+
+/* header */
+.header {
+  padding: 36px 0 8px;
+  /* background-color: #fffcf4; */
+  background-color: #fffcf4;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -28px;
+  z-index: 1;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar {
+  margin-left: auto;
+}
+
+.header .menu {
+  display: flex;
+}
+
+.header .menu a {
+  padding: 0 21px;
+  position: relative;
+  font-size: 1.6rem;
+  color: #5f5b53;
+}
+
+.header .menu a:hover,
+.header .menu li.active a {
+  text-shadow: 1px 0 0 currentColor; /*không bị giật chữ khi hover*/
+  color: #171100;
+}
+
+.header .menu a:hover:before,
+.header .menu li.active a::before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 12px;
+  height: 2px;
+  background: #171100;
+  border-radius: 1px;
+}
+
+.btn.sign-up {
+  margin-left: 70px;
+  font-size: 1.6rem;
+  min-width: 144px;
+}
+
+/* hero */
+
+.hero {
+  background-color: #fffcf4;
+}
+
+.hero .body {
+  padding-top: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero .img-card {
+  position: relative;
+  width: 570px;
+  height: 685px;
+}
+
+.hero .hero-img {
+  position: absolute;
+  left: 0;
+}
+
+.hero .card {
+  min-width: 270px;
+  position: absolute;
+  right: 0;
+  bottom: 48px;
+  padding: 24px;
+  background: #ffffff;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.courses-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.courses-item + .courses-item {
+  margin-top: 22px;
+}
+
+.courses-name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.courses-item p {
+  font-size: 1.4rem;
+  color: #5f5b53;
+}
+
+.courses-item .title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #171100;
+}
+
+.hero .info {
+  margin-top: 64px;
+  width: 470px;
+}
+
+.hero .info .title {
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+
+.hero .info .desc {
+  margin-top: 22px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+}
+
+.hero .info .group {
+  margin-top: 38px;
+  align-items: center;
+}
+
+.btn.courses {
+  min-width: 180px;
+  font-size: 1.8rem;
+  line-height: 64px;
+  background: #ffb900;
+  border-radius: 32px;
+}
+
+.hero .info .polygon {
+  margin-left: 28px;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.hero .watch-vid {
+  margin-left: 14px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}

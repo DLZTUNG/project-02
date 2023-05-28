@@ -106,21 +106,24 @@ a {
 
 .hero {
   background-color: #fffcf4;
+  padding: 56px 0 65px;
 }
 
 .hero .body {
-  padding-top: 56px;
   display: flex;
   justify-content: space-between;
 }
 
-.hero .img-card {
+.hero .media-block {
   position: relative;
   width: 570px;
   height: 685px;
 }
 
 .hero .hero-img {
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
   position: absolute;
   left: 0;
 }
@@ -130,7 +133,7 @@ a {
   position: absolute;
   right: 0;
   bottom: 48px;
-  padding: 24px;
+  padding: 28px 24px;
   background: #ffffff;
   box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
@@ -163,12 +166,12 @@ a {
   color: #171100;
 }
 
-.hero .info {
+.hero .info-block {
   margin-top: 64px;
   width: 470px;
 }
 
-.hero .info .title {
+.hero .info-block .title {
   font-family: "Sen";
   font-weight: 700;
   font-size: 5.8rem;
@@ -177,16 +180,20 @@ a {
   color: #171100;
 }
 
-.hero .info .desc {
-  margin-top: 22px;
+.hero .desc {
   font-size: 1.8rem;
   line-height: 1.67;
   color: #5f5b53;
 }
 
-.hero .info .group {
-  margin-top: 38px;
+.hero .info-block .desc:first-of-type {
+  margin-top: 22px;
+}
+
+.hero .info-block .cta-group {
+  display: flex;
   align-items: center;
+  margin: 38px 0 48px;
 }
 
 .btn.courses {
@@ -197,18 +204,47 @@ a {
   border-radius: 32px;
 }
 
-.hero .info .polygon {
+.watch-vid {
+  font-family: "Poppins";
   margin-left: 28px;
-  width: 12px;
-  height: 12px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.watch-vid .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   background: #ffffff;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
 }
 
-.hero .watch-vid {
+.watch-vid span {
   margin-left: 14px;
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 1.67;
+  color: #171100;
+}
+
+.hero .desc.stats {
+  margin-top: 8px;
+}
+
+.hero .desc.stats span {
+  margin-right: 28px;
+}
+
+.hero .info-block .highlight {
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 1.23;
   color: #171100;
 }

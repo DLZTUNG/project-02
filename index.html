@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="header fixed">
       <div class="content">
         <div class="body">
@@ -111,8 +112,38 @@
               </p>
             </div>
             <div class="right">
-              <img class="icon" src="./assets/img/left arrow.svg" alt="" />
-              <img class="icon" src="./assets/img/right arrow.svg" alt="" />
+              <button class="arrow">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 1L1 7L7 13"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button class="arrow">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L7 7L1 13"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
           <div class="list-courses">
@@ -124,11 +155,11 @@
               />
               <div class="info">
                 <div class="row one">
-                  <span class="title">Basic web design</span>
+                  <span class="title line-clamp">Basic web design</span>
                   <img class="star" src="./assets/img/star.svg" alt="" />
                   <span>4.5</span>
                 </div>
-                <p class="desc">
+                <p class="desc line-clamp">
                   Get the best course, gain knowledge and shine for your future
                   career.
                 </p>
@@ -146,11 +177,11 @@
               />
               <div class="info">
                 <div class="row one">
-                  <span class="title">UI/UX design</span>
+                  <span class="title line-clamp">UI/UX design</span>
                   <img class="star" src="./assets/img/star.svg" alt="" />
                   <span>4.5</span>
                 </div>
-                <p class="desc">
+                <p class="desc line-clamp">
                   Get the best course, gain knowledge and shine for your future
                   career.
                 </p>
@@ -168,11 +199,11 @@
               />
               <div class="info">
                 <div class="row one">
-                  <span class="title">Web App design</span>
+                  <span class="title line-clamp">Web App design</span>
                   <img class="star" src="./assets/img/star.svg" alt="" />
                   <span>4.5</span>
                 </div>
-                <p class="desc">
+                <p class="desc line-clamp">
                   Get the best course, gain knowledge and shine for your future
                   career.
                 </p>
@@ -188,30 +219,281 @@
       <!-- feedback -->
       <div class="feedback">
         <div class="content">
-          <div class="body">
-            <div class="user">
-              <img src="./assets/img/avatar.jpg" alt="" class="avatar" />
-              <div class="info">
-                <span class="name">Peter Moor</span>
-                <span class="role">Student of Web Design</span>
+          <div class="feedback-list">
+            <div class="feedback-item">
+              <div class="user">
+                <img src="./assets/img/avatar-1.jpg" alt="" class="avatar" />
+                <div class="info">
+                  <span class="name">Peter Moor</span>
+                  <span class="role">Student of Web Design</span>
+                </div>
+                <div class="dots">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="quote">
+                <img
+                  src="./assets/img/quote-icon.svg"
+                  alt=""
+                  class="quote-icon"
+                />
+                <blockquote class="quote-content">
+                  Not only does my resume look impressive—filled with the names
+                  and logos of world-class institutions—but these certificates
+                  also bring me closer to my career goals by validating the
+                  skills I've learned."
+                </blockquote>
               </div>
             </div>
-            <div class="quote">
-              <img
-                src="./assets/img/quote-icon.svg"
-                alt=""
-                class="quote-icon"
-              />
-              <blockquote>
-                Not only does my resume look impressive—filled with the names
-                and logos of world-class institutions—but these certificates
-                also bring me closer to my career goals by validating the skills
-                I've learned."
-              </blockquote>
+            <div class="feedback-item">
+              <div class="user">
+                <img src="./assets/img/avatar-2.jpg" alt="" class="avatar" />
+                <div class="info">
+                  <span class="name">Jack Raider</span>
+                  <span class="role">Student of Web Design</span>
+                </div>
+                <div class="dots">
+                  <span class="dot"></span>
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="quote">
+                <img
+                  src="./assets/img/quote-icon.svg"
+                  alt=""
+                  class="quote-icon"
+                />
+                <blockquote class="quote-content">
+                  Not only does my resume look impressive—filled with the names
+                  and logos of world-class institutions—but these certificates
+                  also bring me closer to my career goals by validating the
+                  skills I've learned."
+                </blockquote>
+              </div>
+            </div>
+            <div class="feedback-item">
+              <div class="user">
+                <img src="./assets/img/avatar-3.jpg" alt="" class="avatar" />
+                <div class="info">
+                  <span class="name">Mercury Nguyen</span>
+                  <span class="role">Student of Web Design</span>
+                </div>
+                <div class="dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot active"></span>
+                </div>
+              </div>
+              <div class="quote">
+                <img
+                  src="./assets/img/quote-icon.svg"
+                  alt=""
+                  class="quote-icon"
+                />
+                <blockquote class="quote-content">
+                  Not only does my resume look impressive—filled with the names
+                  and logos of world-class institutions—but these certificates
+                  also bring me closer to my career goals by validating the
+                  skills I've learned."
+                </blockquote>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- features -->
+      <div class="features">
+        <div class="content">
+          <div class="row">
+            <div class="left">
+              <img src="./assets/img/features-1.jpg" alt="" class="thumbnail" />
+              <img src="./assets/img/features-2.jpg" alt="" class="thumbnail" />
+            </div>
+            <div class="right">
+              <h2 class="sub-title">
+                Learner outcomes through our awesome platform
+              </h2>
+              <p class="desc">
+                87% of people learning for professional development report
+                career benefits like getting a promotion, a raise, or starting a
+                new career.
+              </p>
+              <p class="src">Lesson Impact Report (2022)</p>
+              <a href="#" class="btn">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- join now -->
+      <div class="join-now">
+        <div class="content">
+          <div class="row reverse">
+            <div class="left">
+              <img src="./assets/img/join-now.jpg" alt="" class="thumbnail" />
+            </div>
+            <div class="right">
+              <h2 class="sub-title">
+                Take the next step toward your personal and professional goals
+                with Lesson.
+              </h2>
+              <p class="desc">
+                Take the next step toward. Join now to receive personalized and
+                more recommendations from the full Coursera catalog.
+              </p>
+              <a href="#" class="btn">Join Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- blog -->
+      <div class="blog">
+        <div class="content">
+          <div class="blog-top">
+            <h2 class="sub-title">Our blog</h2>
+            <p class="desc">
+              Read our regular travel blog and know the latest update of tour
+              and travel
+            </p>
+          </div>
+          <div class="blog-list">
+            <div class="blog-item">
+              <a href="#!">
+                <img src="./assets/img/blog-1.jpg" alt="" class="blog-img" />
+              </a>
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">
+                  <a href="#!">
+                    How to become a pro web designer in 2022 and get remote job?
+                  </a>
+                </h3>
+                <a href="#!" class="btn">Read More</a>
+              </div>
+            </div>
+            <div class="blog-item">
+              <a href="#!">
+                <img src="./assets/img/blog-1.jpg" alt="" class="blog-img" />
+              </a>
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">
+                  <a href="#!">
+                    How to become a pro web designer in 2022 and get remote job?
+                  </a>
+                </h3>
+                <a href="#!" class="btn">Read More</a>
+              </div>
+            </div>
+            <div class="blog-item">
+              <a href="#!">
+                <img src="./assets/img/blog-2.jpg" alt="" class="blog-img" />
+              </a>
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">
+                  <a href="#!">
+                    How to become a pro web designer in 2022 and get remote job?
+                  </a>
+                </h3>
+                <a href="#!" class="btn">Read More</a>
+              </div>
+            </div>
+            <div class="blog-item">
+              <a href="#!">
+                <img src="./assets/img/blog-1.jpg" alt="" class="blog-img" />
+              </a>
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">
+                  <a href="#!">
+                    How to become a pro web designer in 2022 and get remote job?
+                  </a>
+                </h3>
+                <a href="#!" class="btn">Read More</a>
+              </div>
+            </div>
+            <div class="blog-item">
+              <a href="#!">
+                <img src="./assets/img/blog-1.jpg" alt="" class="blog-img" />
+              </a>
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">
+                  <a href="#!">
+                    How to become a pro web designer in 2022 and get remote job?
+                  </a>
+                </h3>
+                <a href="#!" class="btn">Read More</a>
+              </div>
+            </div>
+            <div class="blog-item">
+              <a href="#!">
+                <img src="./assets/img/blog-3.jpg" alt="" class="blog-img" />
+              </a>
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">
+                  <a href="#!">
+                    How to become a pro web designer in 2022 and get remote job?
+                  </a>
+                </h3>
+                <a href="#!" class="btn">Read More</a>
+              </div>
+            </div>
+            <div class="blog-item">
+              <a href="#!">
+                <img src="./assets/img/blog-1.jpg" alt="" class="blog-img" />
+              </a>
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">
+                  <a href="#!">
+                    How to become a pro web designer in 2022 and get remote job?
+                  </a>
+                </h3>
+                <a href="#!" class="btn">Read More</a>
+              </div>
+            </div>
+            <div class="blog-item">
+              <a href="#!">
+                <img src="./assets/img/blog-2.jpg" alt="" class="blog-img" />
+              </a>
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">
+                  <a href="#!">
+                    How to become a pro web designer in 2022 and get remote job?
+                  </a>
+                </h3>
+                <a href="#!" class="btn">Read More</a>
+              </div>
+            </div>
+            <div class="blog-item">
+              <a href="#!">
+                <img src="./assets/img/blog-3.jpg" alt="" class="blog-img" />
+              </a>
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">
+                  <a href="#!">
+                    How to become a pro web designer in 2022 and get remote job?
+                  </a>
+                </h3>
+                <a href="#!" class="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot active"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer class="footer"></footer>
   </body>
 </html>

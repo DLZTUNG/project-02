@@ -17,10 +17,6 @@ body {
   font-family: "Poppins";
 }
 
-main {
-  height: 10000px;
-}
-
 /* common */
 .content {
   width: 1170px;
@@ -650,4 +646,76 @@ button {
 .blog .active {
   background-color: #ffb900;
   cursor: default;
+}
+
+/* footer */
+.footer {
+  padding: 96px 0 28px;
+  background-color: #2e2100;
+  color: #fff;
+}
+
+.footer .body {
+  display: flex;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #5f5b53;
+}
+
+.footer .info {
+  width: 35%;
+}
+
+.footer .info .desc {
+  max-width: 267px;
+  margin-top: 18px;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb2;
+}
+
+.footer .social-group {
+  margin-top: 18px;
+  display: flex;
+  gap: 18px;
+}
+
+.footer .menu-item {
+  width: 21.6%;
+}
+
+.footer .menu-item .title {
+  padding-bottom: 14px;
+  width: 130px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #ffffff;
+  border-bottom: 1px solid #5f5b53;
+}
+
+.footer .menu-item ul {
+  margin-top: 28px;
+}
+.footer .menu-item li + li {
+  margin-top: 12px;
+}
+
+.footer .menu-item a {
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb2;
+}
+
+.footer .menu-item strong {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #ffffff;
+}
+
+.copyright {
+  margin-top: 28px;
+  font-size: 14px;
+  text-align: center;
+  color: #807d74;
 }
